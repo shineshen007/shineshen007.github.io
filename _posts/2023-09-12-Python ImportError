@@ -1,4 +1,13 @@
-```
+---
+layout: post
+title: Python ImportError
+tags: [Python]
+---
+
+import错误大都是版本问题，但并不一定是这个包本身的问题，要看是哪个包里调用了这个包从而产生问题，比如以上错误就是smatools包版本过低导致的，而不是pandas导致的
+
+Source:
+
+```markdown
 ImportError: cannot import name 'Int64Index' from 'pandas'
 ```
-import错误大都是版本问题，但并不一定是这个包本身的问题，要看是哪个包里调用了这个包从而产生问题，比如以上错误就是smatools包版本过低导致的，而不是pandas导致的
