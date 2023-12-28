@@ -1,0 +1,32 @@
+---
+layout: post
+title: KEGG代谢物数据库update
+categories:
+  - KEGG
+tags:
+  - R
+---
+
+### 起因  
+一直使用MetaboAnalyst网站做代谢通路富集分析，缺点：  
+第一，网站limit  
+第二，附属R包不能直接使用  
+第三，数据不完整，在网站的Q&A里解释是选用的都是经过验证的代谢物，所以一条通路中的
+所含代谢物比kegg官网上要少，导致有时候无法富集出显著的代谢通路，并且，从没见过FDR显著的代谢通路，只能看Raw pvalue
+
+### R中使用KEGGREST包下载最新KEGG物种代谢通路数据
+```
+library(KEGGREST)
+#keggList("hsa")
+hsa_p <- keggLink('pathway','hsa')
+hsa.pathway <- unique(hsa_p)
+hsa.pathway.database <- vector(mode = 'list', length = length(hsa.pathway))
+for(i in 1:length(hsa.pathway)){  
+  cat(i, ' ')  
+  hsa.pathway.database[[i]] <- keggGet(dbentries = hsa.pathway[i])
+}
+```
+### 思考
+选取了76条人类常见通路，进行的enrichment analysis可以得到很多的差异代谢通路，fdr也非常显著，选择最严格的bonferroni矫正算法。
+富集到通路中的代谢物也更多。
+![](https://onlinelibrary.wiley.com/cms/asset/0b3085f2-4977-4dd4-b610-bd30aaf41fda/art41733-fig-0004-m.png)
