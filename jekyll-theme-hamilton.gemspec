@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version       = "4.0.0"
   spec.authors       = ["Shangzhi Huang"]
   spec.email         = ["ngzhio@gmail.com"]
-  spec.skin          = ["Midnight"]
+  spec.skin          = ["midnight"]
 
   spec.summary       = "A minimal and beautiful Jekyll theme best for writing and note-taking."
   spec.homepage      = "https://github.com/ngzhio/jekyll-theme-hamilton"
