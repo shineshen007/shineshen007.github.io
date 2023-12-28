@@ -3,6 +3,7 @@ description: A minimal and beautiful Jekyll theme best for writing and note-taki
 author: shine
 avatar: /logo.png
 email: qq951633542@163.com
+skin: Midnight
 
 plugins:
   - jekyll-seo-tag
@@ -11,7 +12,6 @@ plugins:
   - jekyll-paginate
 
 paginate: 10
-skin: Midnight
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
 # google_analytics: 
