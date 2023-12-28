@@ -3,7 +3,7 @@ description: A minimal and beautiful Jekyll theme best for writing and note-taki
 author: shine
 avatar: /logo.png
 email: qq951633542@163.com
-skin: Midnight
+skin: midnight
 
 plugins:
   - jekyll-seo-tag
