@@ -4,10 +4,14 @@ title: Python ImportError
 tags: [Python]
 ---
 
-import错误大都是版本问题，但并不一定是这个包本身的问题，要看是哪个包里调用了这个包从而产生问题，比如以上错误就是smatools包版本过低导致的，而不是pandas导致的
+The reason of import error in pythob almost related to version,
+Most import errors are often related to version issues, but not necessarily with the package itself. It depends on which package is calling the problematic one,
+leading to the issue. For instance, the error mentioned above is caused by a too-low version of the 'smatools' package, not by 'pandas'.
 
 Source:
 
 ```markdown
 ImportError: cannot import name 'Int64Index' from 'pandas'
 ```
+
+
