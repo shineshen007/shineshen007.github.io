@@ -5,8 +5,6 @@ avatar: /logo.png
 email: qq951633542@163.com
 skin: midnight
 
-intensedebate_comments: true
-
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
