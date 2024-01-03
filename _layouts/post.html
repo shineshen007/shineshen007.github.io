@@ -8,10 +8,9 @@ layout: default
 
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
-        {{ page.content | number_of_words | divided_by:180 }}
       </time>
       {%- if page.last_modified_at -%}
         ~ 
