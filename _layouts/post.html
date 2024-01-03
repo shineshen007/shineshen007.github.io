@@ -11,6 +11,7 @@ layout: default
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
+        {{ page.content | number_of_words | divided_by:180 }}
       </time>
       {%- if page.last_modified_at -%}
         ~ 
