@@ -5,6 +5,8 @@ avatar: /logo.png
 email: qq951633542@163.com
 skin: midnight
 
+intensedebate_comments: true
+
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
@@ -40,5 +42,4 @@ social:
     - https://www.facebook.com/ngzhio
     - https://github.com/ngzhio
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
-intensedebate_comments: true
+lang: ['en', 'cn']
