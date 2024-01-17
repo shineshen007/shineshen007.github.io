@@ -2,6 +2,7 @@
 layout: post
 title: Python ImportError
 tags: [Python]
+categories: [error]
 ---
 ***
 
