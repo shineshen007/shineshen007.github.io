@@ -5,7 +5,7 @@ tags: [单细胞]
 categories: [多组学]
 ---
 ***
-------------------------------------------------------------------------
+
 ## 美化legend
 ```
 m_featureplot <- FeaturePlot(M_Aggregated_seurat, features = "Lepr", reduction = "tsne",
@@ -32,4 +32,4 @@ p2 <- lapply(p1, function (x) x + fix.sc)
 CombinePlots(p2)
 ```
 
-reference[https://www.jianshu.com/p/8cea50fcb30c]
+[reference](https://www.jianshu.com/p/8cea50fcb30c)
