@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 单细胞Featureplot 统一图例scale
-tags: [单细胞]
-categories: [多组学]
+tags: [scRNA-seq]
+categories: [Multi-Omics]
 ---
 ***
 
