@@ -6,9 +6,9 @@ permalink: about
 
 ### Academic interest
 
-The research interests of mine are Metabolomics, Systems biology and HCC biology on multi-omics view.
-
-Utilizing various machine learning algorithms and tools for analyzing metabolomics and other omics data to explain the mechanism of HCC and find related biomarkers to diagnosis and predict clinical events.
+My research pursuits lie at the intersection of Metabolomics, Systems Biology, and the integration of multi-omics data.  
+I specialize in employing a spectrum of machine learning algorithms and analytical tools to dissect the complex datasets from metabolomics and other omics fields.  
+This approach enables me to elucidate the underlying mechanisms of diseases and to identify pivotal biomarkers that are crucial for diagnosis, as well as for the prediction of clinical outcomes.
 
 ### Personal interest
 
