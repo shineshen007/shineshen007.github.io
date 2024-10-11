@@ -1,0 +1,52 @@
+---
+layout: post
+title: conda环境创建与使用-以R3.6和xcms配置为例
+tags: [linux]
+categories: [conda]
+---
+------------------------------------------------------------------------
+
+## 创建环境
+
+```
+conda env list #查看已有环境
+
+conda create -n R3.6
+
+conda activate R3.6
+```
+## 添加镜像
+```
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda
+conda config --set show_channel_urls yes
+conda config --show
+conda search r-base
+```
+## 安装R和R包
+```
+conda install r-base=3.6.1
+which -a R
+```
+# 设置镜像
+进入R
+```
+file.edit(file.path("~",".Rprofile"))  #打开一个文件
+
+options("repos"=c(CRAN="https://mirrors.pku.edu.cn/CRAN/","The Comprehensive R Archive Network","http://mirrors.aliyun.com/CRAN"))
+```
+
+写完后，退出，重新进入R
+```
+options()$repos      #查看现有镜像
+```
+# 安装BiocManager
+```
+if (!require("BiocManager",quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install(xcms)
+```
+### netcdf安装报错
+
+### MASS安装报错
