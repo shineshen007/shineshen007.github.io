@@ -18,3 +18,7 @@ id|pvalue|fc
 gene1|0.02|3
 gene2|0.01|1
 gene3|0.06|2
+
+选择网络组成<img width="448" height="128" alt="image" src="https://github.com/user-attachments/assets/2fdc168e-1d88-43d9-9232-effc175765f9" />
+选择目标通路<img width="459" height="255" alt="image" src="https://github.com/user-attachments/assets/acdf0e06-8f00-4dfb-bb4c-08880632635b" />
+build network
