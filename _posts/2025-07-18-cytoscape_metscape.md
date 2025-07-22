@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cytoscape中使用MCODE app进行代谢-蛋白-基因网络分析
+title: Cytoscape中使用Metascape app进行代谢-蛋白-基因网络分析
 tags: [idea]
 categories: [Multi-Omics]
 ---
